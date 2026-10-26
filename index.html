@@ -182,7 +182,7 @@ if(window.ResizeObserver)new ResizeObserver(fit).observe(viewport);
 
 document.querySelector('.heading p').textContent='Arrastra para girar · Pellizca o usa + para ampliar';
 document.querySelector('#caption').textContent='Abre con la flecha · Pellizca para ampliar en 3D';
-window.menuQA={sheets,labels,get step(){return step},go,assets:Object.keys(assets)};
+window.menuQA={get sheets(){return sheets},get labels(){return labels},get step(){return step},go,assets:Object.keys(assets)};
 (() => {
 'use strict';
 const panel=document.querySelector('#editorPanel'),list=document.querySelector('#pageList'),status=document.querySelector('#editorStatus');
